@@ -1,0 +1,79 @@
+body{
+    margin:0px;
+    background-color: rgb(220, 220, 220);
+}
+
+ul.nav{
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: 1fr repeat(3, auto) 1fr;
+    align-items: center;
+    padding: 16px;
+    margin: 0;
+    background-color: rgb(137, 227, 255);
+}
+ul.nav li{
+    padding: 5px;
+}
+ul.nav li a{
+    text-decoration: none;
+    color:rgb(41, 41, 41);
+    font-weight: bold;
+    font-size: 32px;
+    padding:12px;
+}
+ul.nav li a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+ul.nav li a.selected{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+#bookBtn{
+    background-color: rgb(69, 69, 146);
+    color:rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px 6px 2px 6px;
+    float:right;
+}
+#title{
+    font-size: 42px;
+}
+div, section{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+div.wrapper section{
+    margin: 0;
+    align-self: start;
+
+}
+div.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items:start;
+    gap: 2%;
+}
+img{
+    height: 400px;
+    display:block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img#volcano{
+    height: 450px;
+    width: 1692px;
+    margin:0;
+    margin-top: 16px;
+    object-fit: fill;
+}
+h2{
+    font-size: 32px;
+}
+*{
+    font-size: 24px;
+}
