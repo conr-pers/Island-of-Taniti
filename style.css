@@ -74,6 +74,30 @@ img#volcano{
 h2{
     font-size: 32px;
 }
+form{
+    margin: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+main{
+    display:block;
+    text-align: center;
+}
+form input{
+    margin-bottom: 32px;
+}
 *{
     font-size: 24px;
+}
+ul.logo{
+    list-style-type: none;
+}
+img.logo{
+    width: auto;
+    height: 25px;
+    margin: 0;
+    display:inline-block
 }
