@@ -19,26 +19,29 @@
         </nav>
         <main>
             <h2>We're excited to see you!</h2>
-            <form>
-                <label>From</label>
-                <input type="text">
+            <form target="_self">
+                <label>From <span>*</span></label>
+                <input type="text" required>
                 <label>To Taniti Island</label>
                 <br>
-                <label>Number of Visitors</label>
-                <input type="number">
+                <label>Number of Visitors<span>*</span></label>
+                <input type="number" required>
                 <br>
-                <label>First Day</label>
-                <input type="date">
-                <label>Last Day</label>
-                <input type="date">
+                <label>First Day<span>*</span></label>
+                <input type="date" required id="date">
+                <script>
+                    document.getElementById("date").min = new Date().toISOString().split("T")[0];
+                </script>
+                <label>Last Day<span>*</span></label>
+                <input type="date" required>
                 <br>
                 <label>Activities</label>
                 <br>
-                <label>Zip-lining</label>
+                <label>Zip-lining|</label>
                 <input type="checkbox">
-                <label>Fishing Tour</label>
+                <label>Fishing Tour|</label>
                 <input type="checkbox">
-                <label>Bus Tour</label>
+                <label>Bus Tour|</label>
                 <input type="checkbox">
                 <br>
                 <button type="submit">Submit</button>
